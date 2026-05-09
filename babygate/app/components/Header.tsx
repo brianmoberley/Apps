@@ -15,9 +15,12 @@ export default function Header() {
             <div className="w-8 h-8 bg-sage rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">PG</span>
             </div>
-            <span className="text-xl font-semibold text-black hidden sm:inline">
-              Peaceful PlayGate
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-lg sm:text-xl font-semibold text-black">Peaceful</span>
+              <span className="text-lg sm:text-xl font-semibold text-black bg-white px-3 py-1 rounded-full">
+                PlayGate™
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
