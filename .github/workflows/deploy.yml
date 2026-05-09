@@ -18,15 +18,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: 'babygate/package-lock.json'
+      
+      - name: Install dependencies
+        run: cd babygate && npm ci
       
       - name: Build
-        run: cd babygate && npm ci && npm run build
+        run: cd babygate && npm run build
       
-      - name: Deploy
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./babygate/out
-          cname: brianmoberley.github.io
