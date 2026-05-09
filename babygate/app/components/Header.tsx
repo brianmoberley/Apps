@@ -17,7 +17,7 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-lg sm:text-xl font-semibold text-black">Peaceful</span>
-              <span className="text-lg sm:text-xl font-semibold text-black bg-white px-3 py-1 rounded-full">
+              <span className="text-lg sm:text-xl font-semibold text-black bg-white px-3 py-1 rounded-full border border-gray-300">
                 PlayGate™
               </span>
             </div>
