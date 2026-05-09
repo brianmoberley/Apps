@@ -1,32 +1,26 @@
-name: Deploy to GitHub Pages
+name: Deploy
 
 on:
   push:
     branches: [main]
-  workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-    
     steps:
       - uses: actions/checkout@v4
-      
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-      
-      - name: Install dependencies
-        run: cd babygate && npm ci
-      
-      - name: Build
-        run: cd babygate && npm run build
-      
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./babygate/out
+          node-version: 18
+      - run: cd babygate && npm install && npm run build
+      - name: Deploy
+        run: |
+          git config user.name "Deploy"
+          git config user.email "deploy@github.com"
+          git fetch origin gh-pages || true
+          git checkout --orphan gh-pages || git checkout gh-pages
+          rm -rf *
+          cp -r babygate/out/* .
+          git add .
+          git commit -m "Deploy" || true
+          git push -u origin gh-pages
