@@ -5,8 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
@@ -18,18 +21,12 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'babygate/package-lock.json'
       
-      - name: Install and build
+      - name: Build
         run: cd babygate && npm ci && npm run build
       
-      - name: Copy to docs
-        run: |
-          rm -rf docs
-          cp -r babygate/out docs
-      
-      - name: Commit and push
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add docs/
-          git commit -m "Deploy to GitHub Pages" || true
-          git push
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./babygate/out
+          cname: brianmoberley.github.io
