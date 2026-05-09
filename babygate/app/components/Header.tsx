@@ -20,7 +20,7 @@ export default function Header() {
               <span
                 className="text-lg sm:text-xl font-semibold text-black"
                 style={{
-                  backgroundColor: '#f0f0f0',
+                  backgroundColor: '#fff',
                   paddingLeft: '0.75rem',
                   paddingRight: '0.75rem',
                   paddingTop: '0.25rem',
