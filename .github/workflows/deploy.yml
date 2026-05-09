@@ -5,13 +5,8 @@ on:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     
     steps:
@@ -23,17 +18,18 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'babygate/package-lock.json'
       
-      - name: Install dependencies
-        run: cd babygate && npm ci
+      - name: Install and build
+        run: cd babygate && npm ci && npm run build
       
-      - name: Build
-        run: cd babygate && npm run build
+      - name: Copy to docs
+        run: |
+          rm -rf docs
+          cp -r babygate/out docs
       
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: babygate/out
-      
-      - name: Deploy to Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add docs/
+          git commit -m "Deploy to GitHub Pages" || true
+          git push
