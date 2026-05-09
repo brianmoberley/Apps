@@ -99,7 +99,7 @@ export default function Shop() {
                 Black Bungee System
               </h3>
               <p className="text-gray-700">
-                Silent, adjustable attachment system fits openings from 24" to 42" wide.
+                Silent, adjustable attachment system fits openings from 24\" to 42\" wide.
               </p>
             </div>
             <div>
@@ -138,11 +138,11 @@ export default function Shop() {
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="py-4 font-semibold text-black">Adjustable Width</td>
-                <td className="py-4 text-gray-700">24" - 42"</td>
+                <td className="py-4 text-gray-700">24\" - 42\"</td>
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="py-4 font-semibold text-black">Height</td>
-                <td className="py-4 text-gray-700">26"</td>
+                <td className="py-4 text-gray-700">26\"</td>
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="py-4 font-semibold text-black">Weight Capacity</td>
@@ -177,7 +177,7 @@ export default function Shop() {
             <div>
               <h3 className="text-lg font-bold text-black mb-2">What if my doorway is an odd size?</h3>
               <p className="text-gray-700">
-                The bungee system adjusts from 24" to 42". If your opening is smaller, you can wrap the bungee for a tighter fit.
+                The bungee system adjusts from 24\" to 42\". If your opening is smaller, you can wrap the bungee for a tighter fit.
               </p>
             </div>
             <div>

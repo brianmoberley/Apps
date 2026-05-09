@@ -159,7 +159,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((review, idx) => (
             <div key={idx} className="border border-gray-200 rounded-lg p-8">
-              <p className="text-gray-700 mb-6 italic">"{review.text}"</p>
+              <p className="text-gray-700 mb-6 italic">\"{ review.text}\"</p>
               <div>
                 <p className="font-semibold text-black">{review.author}</p>
                 <p className="text-sm text-gray-600">{review.location}</p>

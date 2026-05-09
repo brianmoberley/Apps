@@ -47,8 +47,8 @@ export default function About() {
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 We wanted to build something that parents could actually be proud to display. Something that
-                transforms the anxiety of "How do I keep my kid safe?" into "I have this beautiful, intentional
-                system in place."
+                transforms the anxiety of \"How do I keep my kid safe?\" into \"I have this beautiful, intentional
+                system in place.\"
               </p>
             </div>
 
