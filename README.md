@@ -1,14 +1,14 @@
-# Peaceful PlayGate
+# Brian Oberley Apps
 
-A beautifully designed, premium play gate website for modern urban parents.
+This repository contains multiple independent web applications and projects.
 
-## Project
+## Projects
 
 ### Peaceful PlayGate
 A professional product website for selling Peaceful PlayGate - premium safety gates with intentional design.
 
 - **Tech Stack**: Next.js 16+, React, TypeScript, Tailwind CSS
-- **Hosting**: GitHub Pages (https://brianmoberley.github.io/PeacefulBabyGate/)
+- **Hosting**: GitHub Pages (https://brianmoberley.github.io/apps/babygate/)
 - **Directory**: `/babygate`
 
 ## Setup & Development
@@ -23,7 +23,7 @@ npm install
 npm run dev
 ```
 
-The development server will run at `http://localhost:3000/PeacefulBabyGate`
+The development server will run at `http://localhost:3000/apps/babygate`
 
 ## Deployment
 
