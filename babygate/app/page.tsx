@@ -22,7 +22,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-white">
+    <div>
       {/* Hero Section */}
       <section className="section-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -44,17 +44,18 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="bg-light-gray rounded-lg aspect-square flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-gray-500 mb-4">Product Lifestyle Photo</p>
-              <p className="text-sm text-gray-400">[Placeholder for stunning apartment setup photo]</p>
-            </div>
+          <div className="rounded-lg overflow-hidden">
+            <img
+              src="/images/playgate-product.jpeg"
+              alt="Peaceful PlayGate - Premium Safety Gate"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="section-padding bg-light-gray">
+      <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
@@ -132,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Video Section */}
-      <section className="section-padding bg-light-gray">
+      <section className="section-padding">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-black mb-12 text-center">
             See It In Action
@@ -170,7 +171,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding" style={{ backgroundColor: 'var(--light-gray)' }}>
+      <section className="section-padding">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-black mb-6">
             Ready to Create Your Peaceful Space?

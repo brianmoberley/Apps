@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-300" style={{ backgroundColor: 'rgba(255,255,255,0.95)' }}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -17,17 +17,7 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-lg sm:text-xl font-semibold text-black">Peaceful</span>
-              <span
-                className="text-lg sm:text-xl font-semibold text-black"
-                style={{
-                  backgroundColor: '#fff',
-                  paddingLeft: '0.75rem',
-                  paddingRight: '0.75rem',
-                  paddingTop: '0.25rem',
-                  paddingBottom: '0.25rem',
-                  borderRadius: '9999px'
-                }}
-              >
+              <span className="text-lg sm:text-xl font-semibold text-black px-3 py-1 rounded-full border border-gray-400" style={{ backgroundColor: 'rgba(255,255,255,0.6)' }}>
                 PlayGate™
               </span>
             </div>

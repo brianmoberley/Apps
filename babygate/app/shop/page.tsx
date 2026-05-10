@@ -26,7 +26,7 @@ export default function Shop() {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="">
       {/* Hero Section */}
       <section className="section-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -78,7 +78,7 @@ export default function Shop() {
       </section>
 
       {/* Product Details Section */}
-      <section className="section-padding bg-light-gray">
+      <section className="section-padding" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-black mb-12 text-center">
             What's Included
@@ -158,7 +158,7 @@ export default function Shop() {
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding bg-light-gray">
+      <section className="section-padding" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-black mb-12 text-center">FAQ</h2>
           <div className="space-y-6">
