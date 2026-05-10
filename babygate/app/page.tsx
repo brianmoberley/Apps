@@ -46,7 +46,7 @@ export default function Home() {
           </div>
           <div className="rounded-lg overflow-hidden">
             <img
-              src="/images/playgate-product.jpeg"
+              src="/Apps/images/playgate-product.jpeg"
               alt="Peaceful PlayGate - Premium Safety Gate"
               className="w-full h-auto object-cover"
             />
