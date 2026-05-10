@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd babygate && npm run build",
+  "outputDirectory": "babygate/.next",
+  "devCommand": "cd babygate && npm run dev",
+  "installCommand": "cd babygate && npm install",
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "@babygate-url"
+  }
+}
