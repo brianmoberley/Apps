@@ -27,4 +27,4 @@ out/
 
 # Logs
 *.log
-npm-debug.log*
+npm-debug.log*next-env.d.ts
