@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <div className="bg-white">
+    <div>
       {/* Hero Section */}
       <section className="section-padding max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-5xl md:text-6xl font-bold text-black mb-8">
@@ -14,7 +14,7 @@ export default function About() {
       </section>
 
       {/* Main Story Section */}
-      <section className="section-padding bg-light-gray">
+      <section className="section-padding" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
             <div>
@@ -108,7 +108,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-light-gray">
+      <section className="section-padding" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-black mb-6">
             Join Our Community of Peaceful Parents

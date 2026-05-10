@@ -15,7 +15,7 @@ export default function OrderTracking() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="">
       {/* Hero Section */}
       <section className="section-padding max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 text-center">
@@ -127,7 +127,7 @@ export default function OrderTracking() {
       </section>
 
       {/* Additional Info */}
-      <section className="section-padding bg-light-gray">
+      <section className="section-padding" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-black mb-8 text-center">Shipping & Support</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
