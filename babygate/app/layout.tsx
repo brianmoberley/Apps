@@ -29,21 +29,17 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col relative">
-        <div
-          className="fixed inset-0 z-0"
-          style={{
-            background: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1200' viewBox='0 0 1920 1200'%3E%3Cdefs%3E%3Cfilter id='watercolor'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015' numOctaves='5' result='noise'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='noise' scale='30'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='1920' height='1200' fill='%23faf9f7'/%3E%3Cpath d='M 0 1000 Q 150 850 300 900 T 650 750 T 1000 850 T 1350 800 T 1700 900 T 2100 850 L 2100 1200 L 0 1200 Z' fill='%239db89d' opacity='0.4' filter='url(%23watercolor)'/%3E%3Cpath d='M 0 1050 Q 200 900 400 950 T 800 850 T 1200 920 T 1600 900 T 2000 1000 L 2000 1200 L 0 1200 Z' fill='%239db89d' opacity='0.3' filter='url(%23watercolor)'/%3E%3Cpath d='M 50 950 Q 250 750 500 820 T 1000 650 T 1500 800 T 2000 750 L 2000 1200 L 50 1200 Z' fill='%23d4a896' opacity='0.35' filter='url(%23watercolor)'/%3E%3Cpath d='M 100 1100 Q 300 950 550 1000 T 1100 900 T 1650 1050 T 2000 1100 L 2000 1200 L 100 1200 Z' fill='%23d4a896' opacity='0.25' filter='url(%23watercolor)'/%3E%3Cpath d='M 0 850 Q 180 650 380 750 T 850 550 T 1350 750 T 1800 650 T 2200 800 L 2200 1200 L 0 1200 Z' fill='%239db89d' opacity='0.2' filter='url(%23watercolor)'/%3E%3C/svg%3E")`,
-            backgroundSize: 'cover',
-            backgroundAttachment: 'fixed',
-            backgroundRepeat: 'no-repeat',
-          }}
-        />
-        <div className="relative z-10 flex flex-col min-h-full">
-          <Header />
-          <main className="flex-1 pt-32">{children}</main>
-          <Footer />
-        </div>
+      <body
+        className="min-h-full flex flex-col"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='500' viewBox='0 0 600 500'%3E%3Cdefs%3E%3Cfilter id='watercolor'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.008' numOctaves='4' result='noise'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='noise' scale='15'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='600' height='500' fill='%23fefdfb'/%3E%3Cpath d='M 0 350 L 0 200 Q 75 120 150 180 Q 225 120 300 150 Q 375 100 450 170 Q 525 120 600 180 L 600 500 Z' fill='%239db89d' opacity='0.55' filter='url(%23watercolor)'/%3E%3Cpath d='M 0 400 L 0 280 Q 100 200 200 250 Q 300 180 400 240 Q 500 190 600 250 L 600 500 Z' fill='%23d4a896' opacity='0.45' filter='url(%23watercolor)'/%3E%3Cpath d='M 0 450 L 0 350 Q 80 310 160 340 Q 240 300 320 340 Q 400 310 480 340 Q 560 300 600 330 L 600 500 Z' fill='%239db89d' opacity='0.3' filter='url(%23watercolor)'/%3E%3C/svg%3E")`,
+          backgroundRepeat: 'repeat',
+          backgroundColor: '#fefdfb'
+        }}
+      >
+        <Header />
+        <main className="flex-1 pt-20">{children}</main>
+        <Footer />
       </body>
     </html>
   );
