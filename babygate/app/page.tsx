@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="section-padding" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+      <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Video Section */}
-      <section className="section-padding" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+      <section className="section-padding">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-black mb-12 text-center">
             See It In Action
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+      <section className="section-padding">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-black mb-6">
             Ready to Create Your Peaceful Space?
