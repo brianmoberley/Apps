@@ -44,11 +44,33 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="bg-light-gray rounded-lg aspect-square flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-gray-500 mb-4">Product Lifestyle Photo</p>
-              <p className="text-sm text-gray-400">[Placeholder for stunning apartment setup photo]</p>
-            </div>
+          <div
+            className="rounded-lg aspect-square flex items-center justify-center overflow-hidden"
+            style={{
+              background: 'linear-gradient(135deg, rgba(157,184,157,0.2) 0%, rgba(212,168,150,0.15) 100%)',
+              border: '2px solid rgba(157,184,157,0.3)',
+            }}
+          >
+            <svg
+              viewBox="0 0 400 400"
+              className="w-full h-full"
+              style={{ maxWidth: '100%', maxHeight: '100%' }}
+            >
+              <defs>
+                <linearGradient id="productGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style={{ stopColor: '#9db89d', stopOpacity: 0.3 }} />
+                  <stop offset="100%" style={{ stopColor: '#d4a896', stopOpacity: 0.2 }} />
+                </linearGradient>
+              </defs>
+              <rect width="400" height="400" fill="url(#productGrad)" />
+              <rect x="80" y="100" width="240" height="200" rx="12" fill="#9db89d" opacity="0.4" />
+              <circle cx="120" cy="140" r="8" fill="#d4a896" opacity="0.6" />
+              <circle cx="280" cy="160" r="6" fill="#d4a896" opacity="0.5" />
+              <rect x="100" y="240" width="200" height="3" rx="1.5" fill="#9db89d" opacity="0.5" />
+              <text x="200" y="200" textAnchor="middle" fontSize="32" fontWeight="bold" fill="#9db89d" opacity="0.4">
+                PlayGate
+              </text>
+            </svg>
           </div>
         </div>
       </section>
